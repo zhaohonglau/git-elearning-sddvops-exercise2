@@ -1,0 +1,98 @@
+{
+  "setup-files": [],
+  "rules": [
+    {
+      "rule": "head-exists",
+      "stop-on-fail": true
+    },
+    {
+      "rule": "branch-exists",
+      "branch": "new-feature-branch",
+      "score-if-correct": 10,
+      "alternative-title": "The 'new-feature-branch' branch has been created."
+    },
+    {
+      "rule": "file-contains-in-branch",
+      "branch": "new-feature-branch",
+      "path": "files/staff.txt",
+      "contents": "Bruce Lee",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "'Bruce Lee' was added in staff.txt in new-feature-branch."
+    },
+    {
+      "rule": "commit-with-message-was-made-on-branch",
+      "branch": "new-feature-branch",
+      "contents": "Added Bruce Lee",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "Commit Message 'Added Bruce Lee'"
+    },
+    {
+      "rule": "file-contains-in-branch",
+      "branch": "main",
+	  "path": "files/employer.txt",
+      "contents": "RP",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "'RP' was added to the employer file."
+    },
+    {
+      "rule": "file-tracked-in-branch",
+      "branch": "new-feature-branch",
+      "path": "files/employer.txt",
+      "score-if-correct": 10,
+      "alternative-title": "The employer file was merged into the new-feature-branch."
+    },
+    {
+      "rule": "file-contains-in-branch",
+      "branch": "main",
+      "path": "files/staff.txt",
+      "contents": "Sunny Rosario",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "The staff file has been merged into the main branch."
+    },
+    {
+      "rule": "commit-with-message-was-merged-into-branch",
+      "branch": "main",
+      "contents": "Add employer file",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "RP have been added to the employer file and merged into the main branch"
+    },
+	{
+      "rule": "branch-exists",
+      "branch": "new-feature-branch2",
+      "score-if-correct": 10,
+      "alternative-title": "The 'new-feature-branch2' branch has been created."
+    },
+	{
+      "rule": "file-contains-in-branch",
+      "branch": "new-feature-branch2",
+      "path": "files/staff.txt",
+      "contents": "Andy Lau",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "'Andy Lau' was added in staff.txt in new-feature-branch2."
+    },
+	{
+      "rule": "file-contains-in-branch",
+      "branch": "main",
+      "path": "files/staff.txt",
+      "contents": "Jacky Chan",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "'Jacky Chan' was added in staff.txt into the main branch."
+    },
+	{
+      "rule": "file-contains-in-branch",
+      "branch": "main",
+      "path": "files/staff.txt",
+      "contents": "Andy Lau",
+      "ignore-case": true,
+      "score-if-correct": 10,
+      "alternative-title": "'Andy Lau' was added in staff.txt and merge into the main branch."
+    }
+  ]
+}
