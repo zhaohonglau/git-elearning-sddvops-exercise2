@@ -48,7 +48,7 @@
       "rule": "file-contains-in-branch",
       "branch": "main",
       "path": "files/staff.txt",
-      "contents": "Sunny Rosario",
+      "contents": "Bruce Lee",
       "ignore-case": true,
       "score-if-correct": 10,
       "alternative-title": "The staff file has been merged into the main branch."
