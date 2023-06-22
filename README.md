@@ -16,4 +16,4 @@
 3) Download [gitruler.jar](https://github.com/rcraggs/gitruler/releases/download/V1.2.5/gitruler.jar) file
 4) Use the command **java -jar [path-to-gitruler.jar] -c [path-to-gitrules.json] -r [path-to-local-repo]**
       
-e.g. java -jar ./gitruler.jar -c ./gitrules.json -r ./git-elearning-sddvops-exercise1
+e.g. java -jar ./gitruler.jar -c ./gitrules.json -r ./git-elearning-sddvops-exercise2
